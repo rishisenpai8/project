@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Chai And Code</title>
+  </head>
+  <body>
+    <h1>Hello</h1>
+    <button id="start">start</button>
+    <button id="stop">stop</button>
+    <script>
+      document.getElementById("start").addEventListener("click", function () {
+        const start = function () {
+          
+        };
+
+        const toStop = setInterval(start, 2000);
+
+        document.getElementById("stop").addEventListener("click", function () {
+          clearInterval(toStop);
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+body{
+    height: 100vh;
+    background: url(/colt/freeCodeCampDOM2/photo-1568145675395-66a2eda0c6d7.avif) no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container{
+    width: 60%;
+    height: 250px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    box-shadow: 0 0 3px;
+}
+
+#timer{
+    width: 100%;
+    font-size: 72px;
+    text-align: center;
+    margin: 0px auto;
+    padding: 35px;
+    box-sizing: border-box;
+}
+
+.buttons{
+    text-align: center;
+}
+
+button{
+    margin: 0 10px;
+    border: none;
+}
+
+button i {
+    font-size: 2rem;
+    padding: 10px;
+    color: white;
+    width: 50px;
+    cursor: pointer;
+}
+ 
+
+#play{
+    background-color: green;
+}
+
+#pause{
+    background-color: orange ;
+}
+
+#reset{
+    background-color: red;
+}

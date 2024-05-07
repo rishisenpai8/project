@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    /* Prevent horizontal scrolling */
+}
+
+
+.container {
+    position: relative;
+    width: calc(100vw - 100px);
+    /* Adjust width to include border width */
+    margin: 0 auto;
+    /* Center the container horizontally */
+}
+
+.container::before,
+.container::after {
+    content: '';
+    position: fixed;
+    /* Fix the borders to the top and bottom */
+    left: 0;
+    width: 100%;
+    height: 10px;
+    /* Adjust the border height as needed */
+    background-color: #2E3138;
+    /* Color of the border */
+    z-index: 9999;
+    /* Ensure the borders are above other content */
+}
+
+.container::before {
+    top: 0;
+    /* Position the top border */
+}
+
+.container::after {
+    bottom: 0;
+    /* Position the bottom border */
+}
+.container{
+    background-color: #7E998A;
+    min-height: 100vh;
+    min-width: 100vw;
+    border: 10px solid #2E3138;
+}
+
+.content{
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.topSection {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.topSection h1{
+    font-size: 50px;
+    font-weight: bold;
+    color: #2E3138;
+    text-transform: uppercase;
+}
+.topSection h4{
+    text-align: end;
+    font-size: 30px;
+    color: #2E3138;
+}
+
+.imageContainer{
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.imageContainer, img{
+    height: 400px;
+    width: 330px;
+    
+}
+
+.about{
+    margin-top: 50px;
+}
+
+.about h2{
+    font-size: 70px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: #2E3138;
+}
+
+.about p{
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 1px;
+    word-spacing: 7px;
+    text-align: justify;
+}
+
+.footers{
+    margin: 50px 0;
+}
+
+.footers h3{
+    font-size: 30px;
+    letter-spacing: 1px;
+    color: #2E3138;
+    margin-bottom: 30px;
+}
+.footers ul{
+    letter-spacing: 1px;
+    color: #2E3138;
+    line-height: 30px;
+    font-size: 20px;
+    word-spacing: 7px;
+    margin-left: 50px;
+}
+.footers li{
+    margin-bottom: 15px;
+}
+
+.footer{
+    margin: 50px 0;
+
+}
+.footer p {
+    text-align: right;
+    font-size: 20px;
+    color: #2E3138;
+    letter-spacing: 1px;
+}
+
